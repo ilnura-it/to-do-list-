@@ -26,7 +26,18 @@ input{
   width: 200px;
   padding: 5px 10px;
 }
-button{
+
+.buttons > button{
+  background-color: #fff;
+  padding: 5px;
+  text-transform: lowercase;
+  border: 2px solid rgb(216, 115, 13);
+  margin: 0 2px;
+}
+.remove{
+  width: 30px;
+}
+button[type="submit"]{
   background-color: rgb(241, 219, 176);
   text-transform: lowercase;
   padding: 5px 10px;

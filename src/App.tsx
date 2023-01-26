@@ -56,9 +56,9 @@ function App() {
             <ul key={index} className="toDo-list">
           <li style={{ textDecoration: todo.complete ? "line-through" : ''}} key={index}>{todo.text}</li>
           {' '}
-          <div>
+          <div className="buttons">
             <button type='button' onClick={() => completeTodo(index)}>{todo.complete ? "Incomplete" : "Complete"}{' '}</button>
-          <button type="button" onClick={() => removeTodo(index)}>&times;</button>
+          <button className='remove' type="button" onClick={() => removeTodo(index)}>&times;</button>
           </div>
           
           </ul>
